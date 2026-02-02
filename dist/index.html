@@ -2,36 +2,39 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <title>Omprakash • Tech & Automation</title>
+  <title>Omprakash Blog</title>
   <link rel="stylesheet" href="assets/style.css">
 </head>
 <body>
 
-  <!-- HERO -->
+  <!-- HERO SECTION -->
   <section class="hero">
+    <div class="hero-overlay"></div>
+
     <div class="hero-content">
-      <h1>Delivering Next-Gen Digital Excellence</h1>
-      <p>Transforming ideas into real world automation and tech solutions.</p>
-      <a href="#services" class="btn">Our Services</a>
+      <h1>Omprakash Blog</h1>
+      <p>Tech • Automation • Cloud • AI</p>
+      <button>Explore Blog</button>
+    </div>
+
+    <!-- SLIDER -->
+    <div class="slider">
+      <img src="assets/photo1.webp" class="slide active">
+      <img src="assets/photo2.webp" class="slide">
+      <img src="assets/photo3.webp" class="slide">
     </div>
   </section>
 
-  <!-- TWO FEATURES (GENPACT STYLE) -->
-  <section id="services" class="features">
-    <div class="feature">
-      <h2>Automation Solutions</h2>
-      <p>Intelligent workflows, AI powered automation solutions that scale.</p>
-    </div>
-    <div class="feature">
-      <h2>Cloud & DevOps</h2>
-      <p>Reliable infra, automated CI/CD pipelines, global delivery.</p>
-    </div>
-  </section>
+  <script>
+    const slides = document.querySelectorAll(".slide");
+    let index = 0;
 
-  <!-- FOOTER -->
-  <footer>
-    © 2026 Omprakash • Built with Cloudflare Pages
-  </footer>
+    setInterval(() => {
+      slides[index].classList.remove("active");
+      index = (index + 1) % slides.length;
+      slides[index].classList.add("active");
+    }, 12000); // 12 seconds (premium speed)
+  </script>
 
 </body>
 </html>
