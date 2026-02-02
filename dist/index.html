@@ -1,41 +1,60 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <title>Omprakash Blog</title>
+  <title>Omprakash | Developer</title>
   <link rel="stylesheet" href="assets/style.css">
 </head>
 <body>
 
-  <h1>Welcome to Omprakash Blog</h1>
-  <p>My first real blog post.</p>
+<div class="container">
 
-  <div class="slideshow">
-    <img class="slide" src="assets/photo1.webp">
-    <img class="slide" src="assets/photo2.webp">
-    <img class="slide" src="assets/photo3.webp">
+  <header>
+    <img src="assets/profile.webp" class="profile">
+    <div>
+      <h1>Omprakash</h1>
+      <div class="tagline">Developer • Automation • Tech Explorer</div>
+    </div>
+  </header>
+
+  <div class="card">
+    <div class="slideshow">
+      <img src="assets/photo1.webp" class="slide">
+      <img src="assets/photo2.webp" class="slide">
+      <img src="assets/photo3.webp" class="slide">
+    </div>
   </div>
 
-  <h2>Post 1</h2>
-  <p>This is my first article.</p>
+  <div class="card post">
+    <h2>First Tech Blog</h2>
+    <p>This site is hosted on Cloudflare Pages and deployed from GitHub.</p>
+  </div>
 
-  <script>
-    let index = 0;
-    const slides = document.getElementsByClassName("slide");
+  <div class="card post">
+    <h2>What I'm Learning</h2>
+    <p>Cloudflare, GitHub, automation, APIs, AI workflows.</p>
+  </div>
 
-    function showSlides() {
-      for (let i = 0; i < slides.length; i++) {
-        slides[i].style.display = "none";
-      }
+  <footer>
+    © 2026 Omprakash.dev — Built with Cloudflare & GitHub
+  </footer>
 
-      index++;
-      if (index > slides.length) { index = 1 }
+</div>
 
-      slides[index - 1].style.display = "block";
-      setTimeout(showSlides, 3000); // 3 seconds
-    }
+<script>
+let index = 0;
+const slides = document.getElementsByClassName("slide");
 
-    showSlides();
-  </script>
+function showSlides() {
+  for (let i = 0; i < slides.length; i++) {
+    slides[i].style.display = "none";
+  }
+  index++;
+  if (index > slides.length) { index = 1 }
+  slides[index-1].style.display = "block";
+  setTimeout(showSlides, 4000); // 4 seconds (professional speed)
+}
+showSlides();
+</script>
 
 </body>
 </html>
