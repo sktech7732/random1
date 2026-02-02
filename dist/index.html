@@ -6,26 +6,34 @@
 </head>
 <body>
 
-  <div class="navbar">
-    <h2>Omprakash Blog</h2>
-    <div class="menu">
-      <a href="#">Home</a>
-      <a href="#">About</a>
-      <a href="#">Posts</a>
-      <a href="#">Contact</a>
-    </div>
+  <h1>Welcome to Omprakash Blog</h1>
+  <p>My first real blog post.</p>
+
+  <!-- Slideshow -->
+  <div class="slideshow">
+    <img class="slide" src="assets/photo1.webp">
+    <img class="slide" src="assets/photo2.webp">
+    <img class="slide" src="assets/photo3.webp">
+    <img class="slide" src="assets/profile.webp">
   </div>
 
-  <div class="profile">
-    <img src="assets/profile.webp" alt="Profile">
-    <h1>Welcome to Omprakash Blog</h1>
-    <p>My first real blog post.</p>
-  </div>
+  <h2>Post 1</h2>
+  <p>This is my first article.</p>
 
-  <div class="post">
-    <h2>Post 1</h2>
-    <p>This is my first article.</p>
-  </div>
+  <script>
+    let index = 0;
+    const slides = document.querySelectorAll(".slide");
+
+    function showSlide() {
+      slides.forEach(s => s.style.display = "none");
+      index++;
+      if (index > slides.length) index = 1;
+      slides[index - 1].style.display = "block";
+    }
+
+    showSlide();
+    setInterval(showSlide, 2000);
+  </script>
 
 </body>
 </html>
