@@ -1,60 +1,37 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-  <title>Omprakash | Developer</title>
+  <meta charset="UTF-8">
+  <title>Omprakash • Tech & Automation</title>
   <link rel="stylesheet" href="assets/style.css">
 </head>
 <body>
 
-<div class="container">
-
-  <header>
-    <img src="assets/profile.webp" class="profile">
-    <div>
-      <h1>Omprakash</h1>
-      <div class="tagline">Developer • Automation • Tech Explorer</div>
+  <!-- HERO -->
+  <section class="hero">
+    <div class="hero-content">
+      <h1>Delivering Next-Gen Digital Excellence</h1>
+      <p>Transforming ideas into real world automation and tech solutions.</p>
+      <a href="#services" class="btn">Our Services</a>
     </div>
-  </header>
+  </section>
 
-  <div class="card">
-    <div class="slideshow">
-      <img src="assets/photo1.webp" class="slide">
-      <img src="assets/photo2.webp" class="slide">
-      <img src="assets/photo3.webp" class="slide">
+  <!-- TWO FEATURES (GENPACT STYLE) -->
+  <section id="services" class="features">
+    <div class="feature">
+      <h2>Automation Solutions</h2>
+      <p>Intelligent workflows, AI powered automation solutions that scale.</p>
     </div>
-  </div>
+    <div class="feature">
+      <h2>Cloud & DevOps</h2>
+      <p>Reliable infra, automated CI/CD pipelines, global delivery.</p>
+    </div>
+  </section>
 
-  <div class="card post">
-    <h2>First Tech Blog</h2>
-    <p>This site is hosted on Cloudflare Pages and deployed from GitHub.</p>
-  </div>
-
-  <div class="card post">
-    <h2>What I'm Learning</h2>
-    <p>Cloudflare, GitHub, automation, APIs, AI workflows.</p>
-  </div>
-
+  <!-- FOOTER -->
   <footer>
-    © 2026 Omprakash.dev — Built with Cloudflare & GitHub
+    © 2026 Omprakash • Built with Cloudflare Pages
   </footer>
-
-</div>
-
-<script>
-let index = 0;
-const slides = document.getElementsByClassName("slide");
-
-function showSlides() {
-  for (let i = 0; i < slides.length; i++) {
-    slides[i].style.display = "none";
-  }
-  index++;
-  if (index > slides.length) { index = 1 }
-  slides[index-1].style.display = "block";
-  setTimeout(showSlides, 4000); // 4 seconds (professional speed)
-}
-showSlides();
-</script>
 
 </body>
 </html>
