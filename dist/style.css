@@ -166,4 +166,29 @@ body {
   .cards {
     grid-template-columns: 1fr;
   }
+
+a, a:visited, a:hover, a:active {
+  text-decoration: none !important;
+  color: inherit;
+}
+
+/* CTA FINAL OVERRIDE */
+.cta-btn {
+  display: inline-flex !important;
+  padding: 14px 44px;
+  margin-top: 36px;
+  background: linear-gradient(90deg, #00e0ff, #00ffa6);
+  color: #000 !important;
+  border-radius: 999px;
+  font-weight: 600;
+  font-size: 1rem;
+  letter-spacing: 0.3px;
+  box-shadow: 0 10px 30px rgba(0,255,200,0.35);
+  transition: all 0.35s ease;
+}
+
+.cta-btn:hover {
+  transform: translateY(-4px) scale(1.03);
+  box-shadow: 0 20px 60px rgba(0,255,200,0.5);
+}
 }
