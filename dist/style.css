@@ -89,3 +89,70 @@ body {
     transform: translateY(0);
   }
 }
+/* NAVBAR */
+.navbar {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  padding: 18px 10%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: rgba(10,15,20,0.6);
+  backdrop-filter: blur(12px);
+  z-index: 10;
+}
+
+.logo {
+  font-size: 1.3rem;
+  font-weight: 600;
+  color: #00e0ff;
+}
+
+.nav-links {
+  list-style: none;
+  display: flex;
+  gap: 30px;
+}
+
+.nav-links li {
+  cursor: pointer;
+  opacity: 0.85;
+  transition: 0.3s;
+}
+
+.nav-links li:hover {
+  opacity: 1;
+  color: #00e0ff;
+}
+
+/* SERVICES */
+.services {
+  padding: 120px 10%;
+  background: #0b0f14;
+}
+
+.services h2 {
+  font-size: 2.6rem;
+  margin-bottom: 50px;
+}
+
+.cards {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 30px;
+}
+
+.card {
+  padding: 30px;
+  background: rgba(255,255,255,0.03);
+  border-radius: 16px;
+  border: 1px solid rgba(255,255,255,0.05);
+  transition: 0.4s;
+}
+
+.card:hover {
+  transform: translateY(-10px);
+  border-color: rgba(0,224,255,0.4);
+  box-shadow: 0 20px 40px rgba(0,224,255,0.15);
+}
