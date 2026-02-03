@@ -61,25 +61,41 @@ body {
   animation: fadeUp 1.6s ease forwards;
 }
 
-/* CTA BUTTON (FIXED) */
+/* CTA BUTTON - REAL APP STYLE */
 .cta-btn {
   margin-top: 36px;
-  padding: 14px 42px;
-  width: fit-content;
+  padding: 14px 44px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+
   background: linear-gradient(90deg, #00e0ff, #00ffa6);
   color: #000;
+
   border-radius: 999px;
-  text-decoration: none;
+  text-decoration: none;      /* underline kill */
   font-weight: 600;
-  letter-spacing: 0.4px;
+  font-size: 1rem;
+  letter-spacing: 0.3px;
+
   box-shadow: 0 10px 30px rgba(0, 255, 200, 0.35);
-  transition: all 0.4s ease;
-  animation: fadeUp 2s ease forwards;
+  transition: all 0.35s ease;
+  cursor: pointer;
+
+  -webkit-tap-highlight-color: transparent; /* mobile blue flash remove */
+}
+
+.cta-btn:visited {
+  color: #000;   /* purple link kill */
 }
 
 .cta-btn:hover {
   transform: translateY(-4px) scale(1.03);
   box-shadow: 0 20px 60px rgba(0, 255, 200, 0.5);
+}
+
+.cta-btn:active {
+  transform: translateY(-1px) scale(0.98);
 }
 
 /* SERVICES */
