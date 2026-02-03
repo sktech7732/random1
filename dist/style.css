@@ -156,3 +156,64 @@ body {
   border-color: rgba(0,224,255,0.4);
   box-shadow: 0 20px 40px rgba(0,224,255,0.15);
 }
+/* ========== HERO SLOW CINEMATIC MOTION ========== */
+.hero {
+  animation: heroMove 25s ease-in-out infinite alternate;
+}
+
+@keyframes heroMove {
+  from {
+    background-position: center;
+    transform: scale(1);
+  }
+  to {
+    background-position: center top;
+    transform: scale(1.05);
+  }
+}
+
+/* ========== GLASSMORPHISM CARDS ========== */
+.card {
+  background: rgba(255,255,255,0.06);
+  backdrop-filter: blur(14px);
+  border: 1px solid rgba(255,255,255,0.1);
+  box-shadow: 0 10px 30px rgba(0,0,0,0.4);
+}
+
+/* ========== SCROLL FADE-IN (PREMIUM) ========== */
+.card {
+  opacity: 0;
+  transform: translateY(50px);
+  transition: 0.9s cubic-bezier(.2,.8,.2,1);
+}
+
+.card.visible {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+/* ========== NAVBAR PREMIUM SHADOW ========== */
+.navbar {
+  box-shadow: 0 10px 40px rgba(0,0,0,0.4);
+}
+
+/* ========== BUTTON GLOW PULSE ========== */
+.hero-content button {
+  position: relative;
+  overflow: hidden;
+}
+
+.hero-content button::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(120deg, transparent, rgba(255,255,255,0.4), transparent);
+  transform: translateX(-100%);
+  animation: shine 3.5s infinite;
+}
+
+@keyframes shine {
+  to {
+    transform: translateX(100%);
+  }
+}
