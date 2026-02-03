@@ -1,1 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Omprakash Blog</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
 
+  <!-- NAVBAR -->
+  <nav class="navbar">
+    <div class="logo">Omprakash</div>
+    <div class="hamburger" onclick="toggleMenu()">☰</div>
+
+    <ul class="nav-links" id="menu">
+      <li>Home</li>
+      <li>Services</li>
+      <li>Blog</li>
+      <li>Contact</li>
+    </ul>
+  </nav>
+
+  <!-- HERO -->
+  <section class="hero">
+    <div class="hero-overlay"></div>
+
+    <div class="hero-content">
+      <h1>Omprakash Blog</h1>
+      <p>Tech • Automation • Cloud • AI</p>
+      <button>Explore Insights</button>
+    </div>
+  </section>
+
+  <!-- EXPERTISE -->
+  <section class="services">
+    <h2>Expertise</h2>
+
+    <div class="cards">
+      <div class="card">
+        <h3>Automation</h3>
+        <p>Workflow automation using modern tools.</p>
+      </div>
+
+      <div class="card">
+        <h3>Cloud</h3>
+        <p>Scalable cloud infrastructure & DevOps.</p>
+      </div>
+
+      <div class="card">
+        <h3>AI</h3>
+        <p>Practical AI for real business problems.</p>
+      </div>
+    </div>
+  </section>
+
+  <script>
+    function toggleMenu() {
+      document.getElementById("menu").classList.toggle("active");
+    }
+  </script>
+
+</body>
+</html>
