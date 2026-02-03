@@ -7,34 +7,15 @@
 </head>
 <body>
 
-  <!-- HERO SECTION -->
   <section class="hero">
     <div class="hero-overlay"></div>
 
     <div class="hero-content">
       <h1>Omprakash Blog</h1>
       <p>Tech • Automation • Cloud • AI</p>
-      <button>Explore Blog</button>
-    </div>
-
-    <!-- SLIDER -->
-    <div class="slider">
-      <img src="assets/photo1.webp" class="slide active">
-      <img src="assets/photo2.webp" class="slide">
-      <img src="assets/photo3.webp" class="slide">
+      <button>Explore Insights</button>
     </div>
   </section>
-
-  <script>
-    const slides = document.querySelectorAll(".slide");
-    let index = 0;
-
-    setInterval(() => {
-      slides[index].classList.remove("active");
-      index = (index + 1) % slides.length;
-      slides[index].classList.add("active");
-    }, 12000); // 12 seconds (premium speed)
-  </script>
 
 </body>
 </html>
