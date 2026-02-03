@@ -67,35 +67,7 @@ body {
 .nav-links.active {
   display: flex;
 }
-
-.logo {
-  font-size: 1.3rem;
-  font-weight: 600;
-  color: #00e0ff;
-}
-
-.nav-links {
-  list-style: none;
-  display: flex;
-  gap: 30px;
-}
-
-.nav-links li {
-  cursor: pointer;
-  opacity: 0.85;
-  transition: 0.3s;
-}
-
-.nav-links li:hover {
-  opacity: 1;
-  color: #00e0ff;
-}
-
-.hamburger {
-  font-size: 1.8rem;
-  cursor: pointer;
-  display: none;
-}
+  
 
 /* HERO */
 .hero {
