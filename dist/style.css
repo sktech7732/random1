@@ -30,6 +30,50 @@ body {
   color: #00e0ff;
 }
 
+/* HAMBURGER ALWAYS VISIBLE */
+.hamburger {
+  font-size: 1.8rem;
+  cursor: pointer;
+  display: block;
+}
+
+/* MENU HIDDEN BY DEFAULT */
+.nav-links {
+  position: absolute;
+  top: 70px;
+  right: 10%;
+  background: rgba(10,15,20,0.95);
+  flex-direction: column;
+  gap: 20px;
+  padding: 25px 30px;
+  border-radius: 14px;
+  list-style: none;
+  display: none;
+  box-shadow: 0 20px 40px rgba(0,0,0,0.5);
+}
+
+.nav-links li {
+  cursor: pointer;
+  opacity: 0.85;
+  transition: 0.3s;
+}
+
+.nav-links li:hover {
+  opacity: 1;
+  color: #00e0ff;
+}
+
+/* WHEN ACTIVE */
+.nav-links.active {
+  display: flex;
+}
+
+.logo {
+  font-size: 1.3rem;
+  font-weight: 600;
+  color: #00e0ff;
+}
+
 .nav-links {
   list-style: none;
   display: flex;
